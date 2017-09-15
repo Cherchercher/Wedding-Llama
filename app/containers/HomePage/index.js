@@ -30,7 +30,7 @@ export default class HomePage extends React.Component { // eslint-disable-line r
         <H1>
           <FormattedMessage {...messages.header} />
         </H1>     
-        <iframe width="100%" height="395" src="https://www.youtube.com/embed/QWMwzqzfqY4" frameborder="0" allowFullScreen></iframe>
+        <iframe width="100%" height="395" src="https://www.youtube.com/embed/QWMwzqzfqY4" frameBorder="0" allowFullScreen></iframe>
         <H3>
           <FormattedMessage {...messages.LlamaHeader} />
         </H3>     
