@@ -6,3 +6,9 @@ Wedding Llama -A Singe Web Application utilizing React WebPeck, which includes
 -Gallery Page
 -Game Page
 -Contact Page
+
+Set up:
+  clone or download the repository
+  npm build
+  npm start
+  navigate to localhost:3000
