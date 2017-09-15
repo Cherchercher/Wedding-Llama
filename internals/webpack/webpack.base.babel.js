@@ -18,6 +18,7 @@ module.exports = (options) => ({
       fs:'empty'
     },
   module: {
+    
     loaders: [{
       test: /\.js$/, // Transform all .js files required somewhere with Babel
       loader: 'babel-loader',
@@ -32,7 +33,17 @@ module.exports = (options) => ({
       test: /\.css$/,
       include: /node_modules/,
       loaders: ['style-loader', 'css-loader'],
-    }, {
+    }, 
+      {
+            test: /\.scss$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "sass-loader" // compiles Sass to CSS
+            },]
+    },{
       test: /\.(eot|svg|ttf|woff|woff2)$/,
       loader: 'file-loader',
     }, {
