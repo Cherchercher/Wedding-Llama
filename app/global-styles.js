@@ -31,4 +31,3 @@ injectGlobal`
     line-height: 1.5em;
   }
 `;
-*/
