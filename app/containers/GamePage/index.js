@@ -8,10 +8,8 @@ import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import H1 from 'components/H1';
 import messages from './messages';
-import store from 'store';
-import StatefulTicTacToe from './statefultictactoe';
-import { Provider } from 'react-redux'
-
+import TicTacToe from './TicTacToe.js';
+require('./style.scss');
 export default class GamePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   // Since state and props are static,
@@ -26,15 +24,13 @@ export default class GamePage extends React.Component { // eslint-disable-line r
         <Helmet
           title="Game Page"
           meta={[
-            { name: 'description', content: 'Game page of React.js Boilerplate application' },
+            { name: 'description', content: 'Game page of Wedding Llamas' },
           ]}
         />
         <H1>
           <FormattedMessage {...messages.header} />
         </H1>
-        <Provider store={store}>
-        <StatefulTicTacToe player="X" />
-    </Provider>
+        <TicTacToe width={ 3 } singlePlayer/>
       </div>
     );
   }
