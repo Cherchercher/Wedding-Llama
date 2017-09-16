@@ -1,7 +1,5 @@
-
-
 {
-  "homepage": "https://Cherchercher.github.io/Wedding-Llama"
+  "homepage": "https://Cherchercher.github.io/Wedding-Llama",
   "name": "Wedding-Llama",
   "version": "3.4.0",
   "description": " single page app based on a highly scalable, offline-first foundation react boiler plate with the best DX and a focus on performance and best practices",
@@ -13,9 +11,9 @@
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Cher Huang, Max Stoiber",
-  "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
     "analyze": "node ./internals/scripts/analyze.js",
@@ -47,6 +45,8 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
+  "author": "Cher Huang, Max Stoiber",
+  "license": "MIT",
   "lint-staged": {
     "*.js": "lint:eslint"
   },
@@ -274,6 +274,8 @@
     "eventsource-polyfill": "0.9.6",
     "exports-loader": "0.6.3",
     "file-loader": "0.9.0",
+    "gh-pages": "^1.0.0",
+    "git-push": "^0.1.1",
     "html-loader": "0.4.4",
     "html-webpack-plugin": "2.24.1",
     "image-webpack-loader": "2.0.0",
