@@ -1,4 +1,4 @@
-Zappos Application for Front End Web Development Intern 2018
+Zappos Application for Front End Web Development Intern 2018<br />
 Link to app: http://keen-icicle.surge.sh/<br />
 Wedding Llama - A Singe Web Application utilizing React and WebPeck, which includes:  <br />
 &nbsp; &nbsp;&nbsp; &nbsp;Home Page: intro to Wedding Llama with youtube video<br />
